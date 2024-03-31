@@ -34,8 +34,8 @@ local Skeleton = {
 	Player = nil;
 	Visible = false;
 	Lines = {};
-	Color = Color3.fromRGB(0,255,0);
-	Alpha = 1;
+	Color = Color3.fromRGB(20,100,0);
+	Alpha = 10;
 	Thickness = 100;
 	DoSubsteps = true;
 }
