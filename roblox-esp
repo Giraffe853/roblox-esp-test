@@ -198,36 +198,6 @@ function Skeleton:Update()
 				l[1].To = V2(part1p.x, part1p.y);
 
 				l[1].Visible = true;
-			else 
-				l[1].Visible = false;
-			end
-			
-			l[2].Visible = false;
-		end
-	end
-	
-	if update or #self.Lines == 0 then
-		self:UpdateStructure();
-	end
-end
-
-function Skeleton:Toggle()
-	self.Visible = not self.Visible;
-
-	if self.Visible then 
-		self:RemoveLines();
-		self:UpdateStructure();
-		
-		local c;c = RS.Heartbeat:Connect(function()
-			if not self.Visible then
-				self:SetVisible(false);
-				c:Disconnect();
-				return;
-			end
-
-			self:Update();
-		end)
-	end
 end
 
 function Skeleton:RemoveLines()
