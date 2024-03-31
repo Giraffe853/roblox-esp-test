@@ -95,7 +95,7 @@ local function ShowArrow(PLAYER)
                     else Arrow.Visible = false end
                 else Arrow.Visible = false end
             else 
-                Arrow.Visible = false
+                Arrow.Visible = Value
 
                 if not PLAYER or not PLAYER.Parent then
                     Arrow:Remove()
