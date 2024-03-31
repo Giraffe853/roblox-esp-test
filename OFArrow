@@ -5,7 +5,7 @@ local TriangleHeight = 16
 local TriangleWidth = 16
 local TriangleFilled = true
 local TriangleTransparency = 0
-local TriangleThickness = 2
+local TriangleThickness = Size
 local TriangleColor = Color3.fromRGB(255, 255, 255)
 local AntiAliasing = true
 
