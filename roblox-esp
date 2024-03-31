@@ -30,13 +30,13 @@ end
 
 -- Skeleton Object
 local Skeleton = {
-	Removed = false;
+	Removed = true;
 	Player = nil;
 	Visible = false;
 	Lines = {};
 	Color = Color3.fromRGB(0,255,0);
 	Alpha = 1;
-	Thickness = 5;
+	Thickness = 100;
 	DoSubsteps = true;
 }
 Skeleton.__index = Skeleton;
