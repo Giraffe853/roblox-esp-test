@@ -5,9 +5,9 @@ local TriangleHeight = 16
 local TriangleWidth = 16
 local TriangleFilled = true
 local TriangleTransparency = 0
-local TriangleThickness = 1
+local TriangleThickness = 2
 local TriangleColor = Color3.fromRGB(255, 255, 255)
-local AntiAliasing = false
+local AntiAliasing = true
 
 ----------------------------------------------------------------
 
@@ -90,12 +90,12 @@ local function ShowArrow(PLAYER)
 
                         Arrow.PointC = AntiA(RelativeToCenter(tip))
 
-                        Arrow.Visible = true
+                        Arrow.Visible = Value
 
                     else Arrow.Visible = false end
                 else Arrow.Visible = false end
             else 
-                Arrow.Visible = Value
+                Arrow.Visible = false
 
                 if not PLAYER or not PLAYER.Parent then
                     Arrow:Remove()
